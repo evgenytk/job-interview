@@ -1,0 +1,24 @@
+{
+  "name": "application",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "eslintConfig": {
+    "extends": [
+      "./packages/eslint-config"
+    ]
+  },
+  "prettier": "./packages/prettier-config",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "5.60.1",
+    "@typescript-eslint/parser": "5.60.1",
+    "eslint": "8.22.0",
+    "eslint-config-prettier": "8.8.0",
+    "eslint-plugin-import": "2.27.5",
+    "eslint-plugin-prettier": "4.2.1",
+    "eslint-plugin-react": "7.23.2",
+    "eslint-plugin-react-hooks": "4.2.0",
+    "prettier": "2.8.8"
+  }
+}

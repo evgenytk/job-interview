@@ -1,0 +1,25 @@
+node_modules
+.env
+.DS_Store
+out
+dist
+
+data/**
+.data/
+
+**/.terraform/**
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+.terragrunt-cache
+terraform.tfvars
+backend.tf
+provider.tf
+.idea
+yarn-error.log
+
+graphql-schema.json
+# act secrets
+.actrc
+
+.http

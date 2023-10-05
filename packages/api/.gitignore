@@ -1,0 +1,27 @@
+node_modules
+build
+
+.env
+.DS_Store
+out
+
+data/**
+.data/
+
+**/.terraform/**
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+.terragrunt-cache
+terraform.tfvars
+.idea
+yarn-error.log
+
+graphql-schema.json
+# act secrets
+.actrc
+
+.http
+
+#New relic local
+newrelic_agent.log
