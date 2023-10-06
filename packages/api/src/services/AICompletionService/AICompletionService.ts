@@ -12,6 +12,7 @@ export class AICompletionService {
   private readonly client: OpenAI;
 
   constructor() {
+    // TODO better inject
     this.client = new OpenAI({
       apiKey: process.env.OPENAI_API_KEY,
     });
