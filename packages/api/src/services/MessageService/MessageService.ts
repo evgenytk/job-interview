@@ -17,6 +17,17 @@ export class MessageService {
   private readonly completionService: AICompletionService;
 
   async createMessage(data: CreateMessageDTO): Promise<Message> {
+    const existingMessage = await this.messageRepository
+      .createQueryBuilder('message')
+      .where('message.id = :id', {
+        id: data.id,
+      })
+      .getOne();
+
+    if (existingMessage) {
+      return existingMessage;
+    }
+
     const message = new Message();
     message.id = data.id;
     message.side = data.side;
